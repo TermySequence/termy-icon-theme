@@ -1,0 +1,10 @@
+*.tar.*
+*.spec
+
+*~
+.#*
+*.bak
+*.orig
+*.rej
+*.swp
+.directory
