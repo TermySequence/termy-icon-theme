@@ -1,13 +1,9 @@
 #!/bin/bash
-# Copyright © 2018 TermySequence LLC
-#
-# SPDX-License-Identifier: GPL-2.0-only
-
-PROJECT_NAME=termy-icon-theme
-PROJECT_VERSION=0.99.1
 
 commit=${1:-HEAD}
-name=${PROJECT_NAME}-${PROJECT_VERSION}
+package=$(awk '/^PackageName:/ {print $2}' LICENSE.spdx)
+version=$(awk '/^PackageVersion:/ {print $2}' LICENSE.spdx)
+name="${package}-${version}"
 tarfile=/tmp/${name}.tar
 tmpdir=/tmp/${name}
 

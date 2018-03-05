@@ -119,7 +119,7 @@ cp "$HOME/git/adwaita-icon-theme/Adwaita/$subdir/actions/zoom-out.png" "$dest/sp
 cp "$HOME/git/oxygen-icons/$subdir/actions/view-split-top-bottom.png" "$dest/split-view-vertical-fixed.png"
 cp "$HOME/git/oxygen-icons/$subdir/actions/key-enter.png" "$dest/submit-item.png"
 cp "$HOME/git/adwaita-icon-theme/Adwaita/$subdir/actions/mail-send-receive.png" "$dest/tasktype-download-pipe.png"
-cp "$HOME/git/adwaita-icon-theme/Adwaita/$subdir/status/network-receive.png" "$dest/tasktype-port-forward-out.png"
+cp "$HOME/git/adwaita-icon-theme/Adwaita/$subdir/status/network-receive.png" "$dest/tasktype-port-forward-in.png"
 cp "$HOME/git/adwaita-icon-theme/Adwaita/$subdir/actions/document-send.png" "$dest/tasktype-upload-file.png"
 cp "$HOME/git/adwaita-icon-theme/Adwaita/$subdir/actions/mark-location.png" "$dest/timing-set-origin.png"
 cp "$HOME/git/oxygen-icons/$subdir/actions/quickopen.png" "$dest/toggle-command-mode.png"

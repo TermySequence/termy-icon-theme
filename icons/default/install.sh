@@ -156,6 +156,7 @@ install $subdir/save.png "$dest"
 install $subdir/save-all.png "$dest"
 (cd "$dest" && ln -sf save-all.png save-as.png)
 install $subdir/save-screen.png "$dest"
+(cd "$dest" && ln -sf next-server.png scroll-image.png)
 (cd "$dest" && ln -sf move-down.png scroll-page-down.png)
 (cd "$dest" && ln -sf move-up.png scroll-page-up.png)
 (cd "$dest" && ln -sf move-top.png scroll-prompt-first.png)
@@ -205,8 +206,8 @@ install $subdir/tasktype-download-pipe.png "$dest"
 (cd "$dest" && ln -sf mount-file-rw.png tasktype-mount.png)
 (cd "$dest" && ln -sf launchtype-write.png tasktype-paste-bytes.png)
 (cd "$dest" && ln -sf launchtype-write.png tasktype-paste-file.png)
-(cd "$dest" && ln -sf manage-port-forwarding.png tasktype-port-forward-in.png)
-install $subdir/tasktype-port-forward-out.png "$dest"
+install $subdir/tasktype-port-forward-in.png "$dest"
+(cd "$dest" && ln -sf manage-port-forwarding.png tasktype-port-forward-out.png)
 (cd "$dest" && ln -sf execute.png tasktype-remote-command.png)
 (cd "$dest" && ln -sf rename-file.png tasktype-rename-file.png)
 (cd "$dest" && ln -sf conntype-batch.png tasktype-run-batch.png)
