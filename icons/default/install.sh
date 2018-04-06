@@ -4,143 +4,143 @@ for subdir in [0-9]*; do
 dest="$1/$subdir"
 mkdir -p "$dest" || return 1
 
-install $subdir/adjust-layout.png "$dest"
-install $subdir/adjust-scrollback.png "$dest"
-install $subdir/annotate.png "$dest"
-install $subdir/cancel-task.png "$dest"
-install $subdir/choose-color.png "$dest"
-install $subdir/choose-font.png "$dest"
-install $subdir/choose-icon.png "$dest"
-install $subdir/choose-item.png "$dest"
-install $subdir/clean.png "$dest"
-install $subdir/clear.png "$dest"
+install -m 644 $subdir/adjust-layout.png "$dest"
+install -m 644 $subdir/adjust-scrollback.png "$dest"
+install -m 644 $subdir/annotate.png "$dest"
+install -m 644 $subdir/cancel-task.png "$dest"
+install -m 644 $subdir/choose-color.png "$dest"
+install -m 644 $subdir/choose-font.png "$dest"
+install -m 644 $subdir/choose-icon.png "$dest"
+install -m 644 $subdir/choose-item.png "$dest"
+install -m 644 $subdir/clean.png "$dest"
+install -m 644 $subdir/clear.png "$dest"
 (cd "$dest" && ln -sf clear.png clear-alert.png)
-install $subdir/clear-scrollback.png "$dest"
-install $subdir/clone-item.png "$dest"
-install $subdir/clone-terminal.png "$dest"
-install $subdir/close-terminal.png "$dest"
+install -m 644 $subdir/clear-scrollback.png "$dest"
+install -m 644 $subdir/clone-item.png "$dest"
+install -m 644 $subdir/clone-terminal.png "$dest"
+install -m 644 $subdir/close-terminal.png "$dest"
 (cd "$dest" && ln -sf close-terminal.png close-window.png)
-install $subdir/configure.png "$dest"
-install $subdir/connection-close.png "$dest"
-install $subdir/connection-launch.png "$dest"
-install $subdir/conntype-active.png "$dest"
-install $subdir/conntype-batch.png "$dest"
-install $subdir/conntype-container.png "$dest"
+install -m 644 $subdir/configure.png "$dest"
+install -m 644 $subdir/connection-close.png "$dest"
+install -m 644 $subdir/connection-launch.png "$dest"
+install -m 644 $subdir/conntype-active.png "$dest"
+install -m 644 $subdir/conntype-batch.png "$dest"
+install -m 644 $subdir/conntype-container.png "$dest"
 (cd "$dest" && ln -sf configure.png conntype-generic.png)
-install $subdir/conntype-named.png "$dest"
-install $subdir/conntype-persistent.png "$dest"
-install $subdir/conntype-root.png "$dest"
-install $subdir/conntype-ssh.png "$dest"
-install $subdir/conntype-transient.png "$dest"
-install $subdir/conntype-user.png "$dest"
+install -m 644 $subdir/conntype-named.png "$dest"
+install -m 644 $subdir/conntype-persistent.png "$dest"
+install -m 644 $subdir/conntype-root.png "$dest"
+install -m 644 $subdir/conntype-ssh.png "$dest"
+install -m 644 $subdir/conntype-transient.png "$dest"
+install -m 644 $subdir/conntype-user.png "$dest"
 (cd "$dest" && ln -sf clone-item.png copy.png)
-install $subdir/decrease-font.png "$dest"
-install $subdir/delete-file.png "$dest"
-install $subdir/destroy.png "$dest"
+install -m 644 $subdir/decrease-font.png "$dest"
+install -m 644 $subdir/delete-file.png "$dest"
+install -m 644 $subdir/destroy.png "$dest"
 (cd "$dest" && ln -sf connection-close.png disconnect-server.png)
 (cd "$dest" && ln -sf connection-close.png disconnect-terminal.png)
-install $subdir/download-file.png "$dest"
+install -m 644 $subdir/download-file.png "$dest"
 (cd "$dest" && ln -sf choose-icon.png download-image.png)
-install $subdir/duplicate-terminal.png "$dest"
-install $subdir/edit-global-settings.png "$dest"
-install $subdir/edit-icon-rules.png "$dest"
-install $subdir/edit-item.png "$dest"
-install $subdir/edit-keymap.png "$dest"
+install -m 644 $subdir/duplicate-terminal.png "$dest"
+install -m 644 $subdir/edit-global-settings.png "$dest"
+install -m 644 $subdir/edit-icon-rules.png "$dest"
+install -m 644 $subdir/edit-item.png "$dest"
+install -m 644 $subdir/edit-keymap.png "$dest"
 (cd "$dest" && ln -sf configure.png edit-profile.png)
 (cd "$dest" && ln -sf configure.png edit-server.png)
-install $subdir/edit-switch-rules.png "$dest"
-install $subdir/event-log.png "$dest"
-install $subdir/execute.png "$dest"
-install $subdir/exit-full-screen.png "$dest"
-install $subdir/exit-pres-mode.png "$dest"
-install $subdir/extract-profile.png "$dest"
-install $subdir/fetch-image.png "$dest"
-install $subdir/filter.png "$dest"
-install $subdir/help-about.png "$dest"
-install $subdir/help-contents.png "$dest"
-install $subdir/help-homepage.png "$dest"
-install $subdir/help-totd.png "$dest"
-install $subdir/hide-item.png "$dest"
+install -m 644 $subdir/edit-switch-rules.png "$dest"
+install -m 644 $subdir/event-log.png "$dest"
+install -m 644 $subdir/execute.png "$dest"
+install -m 644 $subdir/exit-full-screen.png "$dest"
+install -m 644 $subdir/exit-pres-mode.png "$dest"
+install -m 644 $subdir/extract-profile.png "$dest"
+install -m 644 $subdir/fetch-image.png "$dest"
+install -m 644 $subdir/filter.png "$dest"
+install -m 644 $subdir/help-about.png "$dest"
+install -m 644 $subdir/help-contents.png "$dest"
+install -m 644 $subdir/help-homepage.png "$dest"
+install -m 644 $subdir/help-totd.png "$dest"
+install -m 644 $subdir/hide-item.png "$dest"
 (cd "$dest" && ln -sf hide-item.png hide-server.png)
 (cd "$dest" && ln -sf hide-item.png hide-terminal.png)
-install $subdir/highlight-cursor.png "$dest"
-install $subdir/highlight-regions.png "$dest"
-install $subdir/import-item.png "$dest"
-install $subdir/increase-font.png "$dest"
+install -m 644 $subdir/highlight-cursor.png "$dest"
+install -m 644 $subdir/highlight-regions.png "$dest"
+install -m 644 $subdir/import-item.png "$dest"
+install -m 644 $subdir/increase-font.png "$dest"
 (cd "$dest" && ln -sf cancel-task.png input-unset-leader.png)
-install $subdir/insert-item.png "$dest"
-install $subdir/inspect-item.png "$dest"
-install $subdir/launchtype-default.png "$dest"
+install -m 644 $subdir/insert-item.png "$dest"
+install -m 644 $subdir/inspect-item.png "$dest"
+install -m 644 $subdir/launchtype-default.png "$dest"
 (cd "$dest" && ln -sf execute.png launchtype-run-local.png)
 (cd "$dest" && ln -sf execute.png launchtype-run-remote.png)
 (cd "$dest" && ln -sf conntype-persistent.png launchtype-term-local.png)
 (cd "$dest" && ln -sf conntype-persistent.png launchtype-term-remote.png)
-install $subdir/launchtype-write.png "$dest"
-install $subdir/ls-format-long.png "$dest"
-install $subdir/ls-format-short.png "$dest"
-install $subdir/manage-alerts.png "$dest"
+install -m 644 $subdir/launchtype-write.png "$dest"
+install -m 644 $subdir/ls-format-long.png "$dest"
+install -m 644 $subdir/ls-format-short.png "$dest"
+install -m 644 $subdir/manage-alerts.png "$dest"
 (cd "$dest" && ln -sf connection-launch.png manage-connections.png)
-install $subdir/manage-keymaps.png "$dest"
+install -m 644 $subdir/manage-keymaps.png "$dest"
 (cd "$dest" && ln -sf launchtype-default.png manage-launchers.png)
-install $subdir/manage-plugins.png "$dest"
-install $subdir/manage-port-forwarding.png "$dest"
-install $subdir/manage-profiles.png "$dest"
-install $subdir/manage-servers.png "$dest"
+install -m 644 $subdir/manage-plugins.png "$dest"
+install -m 644 $subdir/manage-port-forwarding.png "$dest"
+install -m 644 $subdir/manage-profiles.png "$dest"
+install -m 644 $subdir/manage-servers.png "$dest"
 (cd "$dest" && ln -sf conntype-persistent.png manage-terminals.png)
-install $subdir/manpage-terminal.png "$dest"
-install $subdir/menu-favorites.png "$dest"
+install -m 644 $subdir/manpage-terminal.png "$dest"
+install -m 644 $subdir/menu-favorites.png "$dest"
 (cd "$dest" && ln -sf conntype-persistent.png menu-terminal.png)
-install $subdir/mount-file-ro.png "$dest"
-install $subdir/mount-file-rw.png "$dest"
-install $subdir/move-bottom.png "$dest"
-install $subdir/move-down.png "$dest"
-install $subdir/move-top.png "$dest"
-install $subdir/move-up.png "$dest"
+install -m 644 $subdir/mount-file-ro.png "$dest"
+install -m 644 $subdir/mount-file-rw.png "$dest"
+install -m 644 $subdir/move-bottom.png "$dest"
+install -m 644 $subdir/move-down.png "$dest"
+install -m 644 $subdir/move-top.png "$dest"
+install -m 644 $subdir/move-up.png "$dest"
 (cd "$dest" && ln -sf insert-item.png new-item.png)
-install $subdir/new-terminal.png "$dest"
+install -m 644 $subdir/new-terminal.png "$dest"
 (cd "$dest" && ln -sf new-terminal.png new-terminal-local.png)
 (cd "$dest" && ln -sf manage-servers.png new-terminal-server.png)
-install $subdir/new-window.png "$dest"
-install $subdir/next-server.png "$dest"
+install -m 644 $subdir/new-window.png "$dest"
+install -m 644 $subdir/next-server.png "$dest"
 (cd "$dest" && ln -sf next-server.png next-terminal.png)
-install $subdir/open-directory.png "$dest"
-install $subdir/open-file.png "$dest"
+install -m 644 $subdir/open-directory.png "$dest"
+install -m 644 $subdir/open-file.png "$dest"
 (cd "$dest" && ln -sf conntype-persistent.png open-terminal.png)
 (cd "$dest" && ln -sf help-homepage.png open-url.png)
 (cd "$dest" && ln -sf launchtype-default.png open-with.png)
 (cd "$dest" && ln -sf launchtype-write.png paste.png)
-install $subdir/pause.png "$dest"
+install -m 644 $subdir/pause.png "$dest"
 (cd "$dest" && ln -sf execute.png plugin-action.png)
-install $subdir/plugin-disabled.png "$dest"
-install $subdir/plugin-parser.png "$dest"
+install -m 644 $subdir/plugin-disabled.png "$dest"
+install -m 644 $subdir/plugin-parser.png "$dest"
 (cd "$dest" && ln -sf help-totd.png plugin-totd.png)
-install $subdir/pop-profile.png "$dest"
-install $subdir/previous-server.png "$dest"
+install -m 644 $subdir/pop-profile.png "$dest"
+install -m 644 $subdir/previous-server.png "$dest"
 (cd "$dest" && ln -sf previous-server.png previous-terminal.png)
-install $subdir/push-profile.png "$dest"
-install $subdir/quit-application.png "$dest"
+install -m 644 $subdir/push-profile.png "$dest"
+install -m 644 $subdir/quit-application.png "$dest"
 (cd "$dest" && ln -sf annotate.png raise-annotations-tool.png)
-install $subdir/raise-files-tool.png "$dest"
-install $subdir/raise-history-tool.png "$dest"
+install -m 644 $subdir/raise-files-tool.png "$dest"
+install -m 644 $subdir/raise-history-tool.png "$dest"
 (cd "$dest" && ln -sf edit-keymap.png raise-keymap-tool.png)
-install $subdir/raise-search-tool.png "$dest"
-install $subdir/raise-suggestions-tool.png "$dest"
-install $subdir/raise-tasks-tool.png "$dest"
+install -m 644 $subdir/raise-search-tool.png "$dest"
+install -m 644 $subdir/raise-suggestions-tool.png "$dest"
+install -m 644 $subdir/raise-tasks-tool.png "$dest"
 (cd "$dest" && ln -sf conntype-persistent.png raise-terminals-tool.png)
-install $subdir/random-theme.png "$dest"
-install $subdir/reboot.png "$dest"
-install $subdir/reload.png "$dest"
-install $subdir/reload-all.png "$dest"
-install $subdir/remove-annotation.png "$dest"
+install -m 644 $subdir/random-theme.png "$dest"
+install -m 644 $subdir/reboot.png "$dest"
+install -m 644 $subdir/reload.png "$dest"
+install -m 644 $subdir/reload-all.png "$dest"
+install -m 644 $subdir/remove-annotation.png "$dest"
 (cd "$dest" && ln -sf remove-annotation.png remove-command.png)
-install $subdir/remove-item.png "$dest"
-install $subdir/rename-file.png "$dest"
+install -m 644 $subdir/remove-item.png "$dest"
+install -m 644 $subdir/rename-file.png "$dest"
 (cd "$dest" && ln -sf rename-file.png rename-item.png)
-install $subdir/reorder.png "$dest"
+install -m 644 $subdir/reorder.png "$dest"
 (cd "$dest" && ln -sf next-server.png reorder-server-backward.png)
-install $subdir/reorder-server-first.png "$dest"
+install -m 644 $subdir/reorder-server-first.png "$dest"
 (cd "$dest" && ln -sf previous-server.png reorder-server-forward.png)
-install $subdir/reorder-server-last.png "$dest"
+install -m 644 $subdir/reorder-server-last.png "$dest"
 (cd "$dest" && ln -sf next-server.png reorder-terminal-backward.png)
 (cd "$dest" && ln -sf reorder-server-first.png reorder-terminal-first.png)
 (cd "$dest" && ln -sf previous-server.png reorder-terminal-forward.png)
@@ -150,12 +150,12 @@ install $subdir/reorder-server-last.png "$dest"
 (cd "$dest" && ln -sf clear.png reset-icon.png)
 (cd "$dest" && ln -sf clear.png reset-search.png)
 (cd "$dest" && ln -sf reload.png reset-terminal.png)
-install $subdir/restart-task.png "$dest"
+install -m 644 $subdir/restart-task.png "$dest"
 (cd "$dest" && ln -sf restart-task.png resume.png)
-install $subdir/save.png "$dest"
-install $subdir/save-all.png "$dest"
+install -m 644 $subdir/save.png "$dest"
+install -m 644 $subdir/save-all.png "$dest"
 (cd "$dest" && ln -sf save-all.png save-as.png)
-install $subdir/save-screen.png "$dest"
+install -m 644 $subdir/save-screen.png "$dest"
 (cd "$dest" && ln -sf next-server.png scroll-image.png)
 (cd "$dest" && ln -sf move-down.png scroll-page-down.png)
 (cd "$dest" && ln -sf move-up.png scroll-page-up.png)
@@ -167,31 +167,31 @@ install $subdir/save-screen.png "$dest"
 (cd "$dest" && ln -sf move-top.png scroll-to-top.png)
 (cd "$dest" && ln -sf raise-search-tool.png search.png)
 (cd "$dest" && ln -sf close-terminal.png search-close.png)
-install $subdir/search-down.png "$dest"
-install $subdir/search-up.png "$dest"
-install $subdir/select.png "$dest"
+install -m 644 $subdir/search-down.png "$dest"
+install -m 644 $subdir/search-up.png "$dest"
+install -m 644 $subdir/select.png "$dest"
 (cd "$dest" && ln -sf destroy.png send-signal.png)
 (cd "$dest" && ln -sf manage-alerts.png set-alert.png)
-install $subdir/show-item.png "$dest"
-install $subdir/show-menu-bar.png "$dest"
+install -m 644 $subdir/show-item.png "$dest"
+install -m 644 $subdir/show-menu-bar.png "$dest"
 (cd "$dest" && ln -sf show-item.png show-server.png)
 (cd "$dest" && ln -sf show-item.png show-terminal.png)
 (cd "$dest" && ln -sf show-item.png show-terminals.png)
-install $subdir/shutdown.png "$dest"
-install $subdir/sort-ascending.png "$dest"
-install $subdir/sort-descending.png "$dest"
-install $subdir/split-view-close.png "$dest"
-install $subdir/split-view-close-others.png "$dest"
-install $subdir/split-view-equalize.png "$dest"
-install $subdir/split-view-equalize-all.png "$dest"
-install $subdir/split-view-expand.png "$dest"
+install -m 644 $subdir/shutdown.png "$dest"
+install -m 644 $subdir/sort-ascending.png "$dest"
+install -m 644 $subdir/sort-descending.png "$dest"
+install -m 644 $subdir/split-view-close.png "$dest"
+install -m 644 $subdir/split-view-close-others.png "$dest"
+install -m 644 $subdir/split-view-equalize.png "$dest"
+install -m 644 $subdir/split-view-equalize-all.png "$dest"
+install -m 644 $subdir/split-view-expand.png "$dest"
 (cd "$dest" && ln -sf split-view-equalize.png split-view-horizontal-fixed.png)
 (cd "$dest" && ln -sf split-view-equalize.png split-view-horizontal-resize.png)
-install $subdir/split-view-quad-fixed.png "$dest"
-install $subdir/split-view-shrink.png "$dest"
-install $subdir/split-view-vertical-fixed.png "$dest"
+install -m 644 $subdir/split-view-quad-fixed.png "$dest"
+install -m 644 $subdir/split-view-shrink.png "$dest"
+install -m 644 $subdir/split-view-vertical-fixed.png "$dest"
 (cd "$dest" && ln -sf split-view-vertical-fixed.png split-view-vertical-resize.png)
-install $subdir/submit-item.png "$dest"
+install -m 644 $subdir/submit-item.png "$dest"
 (cd "$dest" && ln -sf next-server.png switch-item.png)
 (cd "$dest" && ln -sf next-server.png switch-pane.png)
 (cd "$dest" && ln -sf conntype-user.png take-terminal-ownership.png)
@@ -200,38 +200,38 @@ install $subdir/submit-item.png "$dest"
 (cd "$dest" && ln -sf delete-file.png tasktype-delete-file.png)
 (cd "$dest" && ln -sf download-file.png tasktype-download-file.png)
 (cd "$dest" && ln -sf choose-icon.png tasktype-download-image.png)
-install $subdir/tasktype-download-pipe.png "$dest"
+install -m 644 $subdir/tasktype-download-pipe.png "$dest"
 (cd "$dest" && ln -sf fetch-image.png tasktype-fetch-image.png)
 (cd "$dest" && ln -sf execute.png tasktype-local-command.png)
 (cd "$dest" && ln -sf mount-file-rw.png tasktype-mount.png)
 (cd "$dest" && ln -sf launchtype-write.png tasktype-paste-bytes.png)
 (cd "$dest" && ln -sf launchtype-write.png tasktype-paste-file.png)
-install $subdir/tasktype-port-forward-in.png "$dest"
+install -m 644 $subdir/tasktype-port-forward-in.png "$dest"
 (cd "$dest" && ln -sf manage-port-forwarding.png tasktype-port-forward-out.png)
 (cd "$dest" && ln -sf execute.png tasktype-remote-command.png)
 (cd "$dest" && ln -sf rename-file.png tasktype-rename-file.png)
 (cd "$dest" && ln -sf conntype-batch.png tasktype-run-batch.png)
 (cd "$dest" && ln -sf connection-launch.png tasktype-run-connect.png)
-install $subdir/tasktype-upload-file.png "$dest"
+install -m 644 $subdir/tasktype-upload-file.png "$dest"
 (cd "$dest" && ln -sf tasktype-download-pipe.png tasktype-upload-pipe.png)
-install $subdir/timing-set-origin.png "$dest"
-install $subdir/toggle-command-mode.png "$dest"
-install $subdir/toggle-full-screen.png "$dest"
+install -m 644 $subdir/timing-set-origin.png "$dest"
+install -m 644 $subdir/toggle-command-mode.png "$dest"
+install -m 644 $subdir/toggle-full-screen.png "$dest"
 (cd "$dest" && ln -sf timing-set-origin.png toggle-marks-widget.png)
 (cd "$dest" && ln -sf show-menu-bar.png toggle-menu-bar.png)
-install $subdir/toggle-minimap-widget.png "$dest"
-install $subdir/toggle-pres-mode.png "$dest"
-install $subdir/toggle-scrollbar-widget.png "$dest"
-install $subdir/toggle-status-bar.png "$dest"
-install $subdir/toggle-terminal-remote-input.png "$dest"
-install $subdir/toggle-timing-widget.png "$dest"
-install $subdir/toggle-tool-search-bar.png "$dest"
+install -m 644 $subdir/toggle-minimap-widget.png "$dest"
+install -m 644 $subdir/toggle-pres-mode.png "$dest"
+install -m 644 $subdir/toggle-scrollbar-widget.png "$dest"
+install -m 644 $subdir/toggle-status-bar.png "$dest"
+install -m 644 $subdir/toggle-terminal-remote-input.png "$dest"
+install -m 644 $subdir/toggle-timing-widget.png "$dest"
+install -m 644 $subdir/toggle-tool-search-bar.png "$dest"
 (cd "$dest" && ln -sf show-menu-bar.png toggle-tool-table-header.png)
 (cd "$dest" && ln -sf insert-item.png tool-filter-add-server.png)
 (cd "$dest" && ln -sf insert-item.png tool-filter-add-terminal.png)
 (cd "$dest" && ln -sf remove-item.png tool-filter-exclude-server.png)
 (cd "$dest" && ln -sf remove-item.png tool-filter-exclude-terminal.png)
-install $subdir/tool-filter-include-nothing.png "$dest"
+install -m 644 $subdir/tool-filter-include-nothing.png "$dest"
 (cd "$dest" && ln -sf clean.png tool-filter-remove-closed.png)
 (cd "$dest" && ln -sf clear.png tool-filter-reset.png)
 (cd "$dest" && ln -sf filter.png tool-filter-set-server.png)
