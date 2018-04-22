@@ -117,6 +117,7 @@ install -m 644 $subdir/plugin-parser.png "$dest"
 install -m 644 $subdir/pop-profile.png "$dest"
 install -m 644 $subdir/previous-server.png "$dest"
 (cd "$dest" && ln -sf previous-server.png previous-terminal.png)
+(cd "$dest" && ln -sf execute.png prompt.png)
 install -m 644 $subdir/push-profile.png "$dest"
 install -m 644 $subdir/quit-application.png "$dest"
 (cd "$dest" && ln -sf annotate.png raise-annotations-tool.png)
