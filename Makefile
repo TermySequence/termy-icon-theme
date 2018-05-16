@@ -7,5 +7,5 @@ dest="$(DESTDIR)$(PREFIX)/share/$(APP_NAME)/icons"
 install:
 	mkdir -p $(dest)
 	mkdir -p $(dest)/default
-	cd icons/default && source ./install.sh $(dest)/default
+	cd icons/default && /bin/sh ./install.sh $(dest)/default
 	install -m 644 icons/default/index.theme $(dest)/default
